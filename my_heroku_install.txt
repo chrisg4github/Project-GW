@@ -6,119 +6,20 @@ Email: chrisguthrie1600@comcast.net
 Password: ************
 Logged in as chrisguthrie1600@comcast.net
 
-C:\Users\Chrisg\BootCampClasswork\Project-GW>help
-For more information on a specific command, type HELP command-name
-ASSOC          Displays or modifies file extension associations.
-ATTRIB         Displays or changes file attributes.
-BREAK          Sets or clears extended CTRL+C checking.
-BCDEDIT        Sets properties in boot database to control boot loading.
-CACLS          Displays or modifies access control lists (ACLs) of files.
-CALL           Calls one batch program from another.
-CD             Displays the name of or changes the current directory.
-CHCP           Displays or sets the active code page number.
-CHDIR          Displays the name of or changes the current directory.
-CHKDSK         Checks a disk and displays a status report.
-CHKNTFS        Displays or modifies the checking of disk at boot time.
-CLS            Clears the screen.
-CMD            Starts a new instance of the Windows command interpreter.
-COLOR          Sets the default console foreground and background colors.
-COMP           Compares the contents of two files or sets of files.
-COMPACT        Displays or alters the compression of files on NTFS partitions.
-CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
-               current drive.
-COPY           Copies one or more files to another location.
-DATE           Displays or sets the date.
-DEL            Deletes one or more files.
-DIR            Displays a list of files and subdirectories in a directory.
-DISKCOMP       Compares the contents of two floppy disks.
-DISKCOPY       Copies the contents of one floppy disk to another.
-DISKPART       Displays or configures Disk Partition properties.
-DOSKEY         Edits command lines, recalls Windows commands, and
-               creates macros.
-DRIVERQUERY    Displays current device driver status and properties.
-ECHO           Displays messages, or turns command echoing on or off.
-ENDLOCAL       Ends localization of environment changes in a batch file.
-ERASE          Deletes one or more files.
-EXIT           Quits the CMD.EXE program (command interpreter).
-FC             Compares two files or sets of files, and displays the
-               differences between them.
-FIND           Searches for a text string in a file or files.
-FINDSTR        Searches for strings in files.
-FOR            Runs a specified command for each file in a set of files.
-FORMAT         Formats a disk for use with Windows.
-FSUTIL         Displays or configures the file system properties.
-FTYPE          Displays or modifies file types used in file extension
-               associations.
-GOTO           Directs the Windows command interpreter to a labeled line in
-               a batch program.
-GPRESULT       Displays Group Policy information for machine or user.
-GRAFTABL       Enables Windows to display an extended character set in
-               graphics mode.
-HELP           Provides Help information for Windows commands.
-ICACLS         Display, modify, backup, or restore ACLs for files and
-               directories.
-IF             Performs conditional processing in batch programs.
-LABEL          Creates, changes, or deletes the volume label of a disk.
-MD             Creates a directory.
-MKDIR          Creates a directory.
-MKLINK         Creates Symbolic Links and Hard Links
-MODE           Configures a system device.
-MORE           Displays output one screen at a time.
-MOVE           Moves one or more files from one directory to another
-               directory.
-OPENFILES      Displays files opened by remote users for a file share.
-PATH           Displays or sets a search path for executable files.
-PAUSE          Suspends processing of a batch file and displays a message.
-POPD           Restores the previous value of the current directory saved by
-               PUSHD.
-PRINT          Prints a text file.
-PROMPT         Changes the Windows command prompt.
-PUSHD          Saves the current directory then changes it.
-RD             Removes a directory.
-RECOVER        Recovers readable information from a bad or defective disk.
-REM            Records comments (remarks) in batch files or CONFIG.SYS.
-REN            Renames a file or files.
-RENAME         Renames a file or files.
-REPLACE        Replaces files.
-RMDIR          Removes a directory.
-ROBOCOPY       Advanced utility to copy files and directory trees
-SET            Displays, sets, or removes Windows environment variables.
-SETLOCAL       Begins localization of environment changes in a batch file.
-SC             Displays or configures services (background processes).
-SCHTASKS       Schedules commands and programs to run on a computer.
-SHIFT          Shifts the position of replaceable parameters in batch files.
-SHUTDOWN       Allows proper local or remote shutdown of machine.
-SORT           Sorts input.
-START          Starts a separate window to run a specified program or command.
-SUBST          Associates a path with a drive letter.
-SYSTEMINFO     Displays machine specific properties and configuration.
-TASKLIST       Displays all currently running tasks including services.
-TASKKILL       Kill or stop a running process or application.
-TIME           Displays or sets the system time.
-TITLE          Sets the window title for a CMD.EXE session.
-TREE           Graphically displays the directory structure of a drive or
-               path.
-TYPE           Displays the contents of a text file.
-VER            Displays the Windows version.
-VERIFY         Tells Windows whether to verify that your files are written
-               correctly to a disk.
-VOL            Displays a disk volume label and serial number.
-XCOPY          Copies files and directory trees.
-WMIC           Displays WMI information inside interactive command shell.
-
-For more information on tools see the command-line reference in the online help.
 
 
-C:\Users\Chrisg\BootCampClasswork\Project-GW>
+C:\cd cUsers\Chrisg\BootCampClasswork\Project-GW>
 C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku create
 Creating app... done, nameless-sea-62811
 https://nameless-sea-62811.herokuapp.com/ | https://git.heroku.com/nameless-sea-
 62811.git
 
+
 C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku rename Project-GW
 Renaming nameless-sea-62811 to Project-GW... !
  !    Name must start with a letter and can only contain lowercase letters,
  !    numbers, and dashes.
+
 
 C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku rename project-gw
 Renaming nameless-sea-62811 to project-gw... done
@@ -126,6 +27,7 @@ https://project-gw.herokuapp.com/ | https://git.heroku.com/project-gw.git
 Git remote heroku updated
  !    Don't forget to update git remotes for all other local checkouts of the
  !    app.
+
 
 C:\Users\Chrisg\BootCampClasswork\Project-GW>git remote -v
 heroku  https://git.heroku.com/project-gw.git (fetch)
@@ -135,13 +37,7 @@ origin  https://github.com/chrisg4github/Project-GW.git (push)
 
 
 
-C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku addons:create heroku-postgre
-sql:gw_db
-Creating heroku-postgresql:gw_db on project-gw... !
- !    Couldn't find either the add-on service or the add-on plan of
- !    "heroku-postgresql:gw_db".
-
-
+# Create the postgres database hobby-dev is a free database level
 C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku addons:create heroku-postgre
 sql:hobby-dev
 Creating heroku-postgresql:hobby-dev on project-gw... free
@@ -152,7 +48,7 @@ Created postgresql-animated-62565 as DATABASE_URL
 Use heroku addons:docs heroku-postgresql to view documentation
 
 
-
+# List any heroku addons you have set up
 C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku addons
 
 Add-on                                         Plan       Price  State
@@ -164,8 +60,7 @@ The table above shows add-ons and the attachments to the current app (project-gw
 ) or other apps.
 
 
-
-
+# List information about the database set up
 C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku pg:info
 === DATABASE_URL
 Plan:                  Hobby-dev
@@ -183,21 +78,18 @@ Add-on:                postgresql-animated-62565
 
 
 
-
+# Check the contents of the DATABASE_URL
 C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku config
 === project-gw Config Vars
 DATABASE_URL: postgres://zveqkcpjroxbce:44a0357267af92609c0117ccd9c262d8746e69c5
 980140d843cdfef853069cb8@ec2-50-17-253-3.compute-1.amazonaws.com:5432/d7b3o1itpo
 de38
 
+Exit heroku.
 
 
 
-C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku config
-=== project-gw Config Vars
-DATABASE_URL: postgres://zveqkcpjroxbce:44a0357267af92609c0117ccd9c262d8746e69c5
-980140d843cdfef853069cb8@ec2-50-17-253-3.compute-1.amazonaws.com:5432/d7b3o1itpo
-de38
+Log into the local database:
 
 C:\Users\Chrisg\BootCampClasswork\Project-GW>psql -d gw_db -U postgres
 Password for user postgres:
@@ -245,6 +137,8 @@ gw_db-# \q
 
 
 
+
+# Log into heroku to push the local database to heroku database (not working)
 C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku login
 Enter your Heroku credentials:
 Email: chrisguthrie1600@comcast.net
@@ -279,6 +173,7 @@ Continuous Protection: Off
 Add-on:                postgresql-animated-62565
 
 
+
 C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku config
 === project-gw Config Vars
 DATABASE_URL: postgres://zveqkcpjroxbce:44a0357267af92609c0117ccd9c262d8746e69c5
@@ -287,7 +182,7 @@ de38
 
 
 
-PGPASSWORD="Xh4iJp!2lyZq" 
+Two example database export commands for Windows command prompt:
 
 pg_dump -Fc --no-owner -U postgres gw_db > gw_db_11142017.dump
 
@@ -296,10 +191,16 @@ pg_dump -Fc gw_db > gw_db_11142017.dump
 
 
 
+# Pushing code from local repor to Heroku repo:
+To deploy your app to Heroku, you typically use the git add, commit, push commands
+to push the code from your local repository’s master branch to your heroku remote.
+$ git add .
+$ git commit -m "Move new files to heroku"
+$ git push heroku master
 
 
-
-
+# Why do we have a local repo copy in our GitHub repo?
+# Are we supposed to move local repo to GitHub to Heroku?
 
 
 
