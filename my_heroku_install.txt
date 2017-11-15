@@ -189,6 +189,26 @@ pg_dump -Fc --no-owner -U postgres gw_db > gw_db_11142017.dump
 pg_dump -Fc gw_db > gw_db_11142017.dump
 
 
+# Local verification of the database gw_db (hawaii tables)
+Chrisg@Chrisg-PC MINGW64 ~/bootcampclasswork/Project-GW (master)
+$ psql -d gw_db -U postgres
+Password for user postgres:
+psql (9.6.4)
+WARNING: Console code page (437) differs from Windows code page (1252)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+Type "help" for help.
+
+gw_db=# \dt
+          List of relations
+ Schema |  Name   | Type  |  Owner
+--------+---------+-------+----------
+ public | station | table | postgres
+ public | weather | table | postgres
+(2 rows)
+
+gw_db=# \q  (to quit psql)
+
 
 
 # Pushing code from local repor to Heroku repo:
