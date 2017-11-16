@@ -1,1 +1,1 @@
-web: gunicorn app:app_hawaii.py
+web: gunicorn manage:app_hawaii.py
