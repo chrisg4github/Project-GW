@@ -147,8 +147,7 @@ Logged in as chrisguthrie1600@comcast.net
 
 
 
-C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku pg:push gw_db DATABASE_URL -
--app project-gw
+C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku pg:push gw_db DATABASE_URL --app project-gw
 heroku-cli: Pushing gw_db ---> postgresql-animated-62565
 'env' is not recognized as an internal or external command,
 operable program or batch file.
@@ -188,6 +187,9 @@ pg_dump -Fc --no-owner -U postgres gw_db > gw_db_11142017.dump
 
 pg_dump -Fc gw_db > gw_db_11142017.dump
 
+Examples of pg_restore:
+pg_restore -U <username> -d <dbname> -1 <filename>.dump
+
 
 # Local verification of the database gw_db (hawaii tables)
 Chrisg@Chrisg-PC MINGW64 ~/bootcampclasswork/Project-GW (master)
@@ -221,6 +223,139 @@ $ git push heroku master
 
 # Why do we have a local repo copy in our GitHub repo?
 # Are we supposed to move local repo to GitHub to Heroku?
+
+
+# ***********************************************************************************
+
+
+Chrisg@Chrisg-PC MINGW64 ~/bootcampclasswork/Project-GW (master)
+$ git push heroku master
+Counting objects: 92, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (86/86), done.
+Writing objects: 100% (92/92), 131.12 MiB | 176.00 KiB/s, done.
+Total 92 (delta 28), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> Installing python-3.6.2
+remote: -----> Installing pip
+remote: -----> Installing requirements with pip
+remote:        Collecting gunicorn==19.7.1 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 1))
+remote:          Downloading gunicorn-19.7.1-py2.py3-none-any.whl (111kB)
+remote:        Collecting certifi==2017.7.27.1 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 2))
+remote:          Downloading certifi-2017.7.27.1-py2.py3-none-any.whl (349kB)
+remote:        Collecting chardet==3.0.4 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 3))
+remote:          Downloading chardet-3.0.4-py2.py3-none-any.whl (133kB)
+remote:        Collecting click==6.7 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 4))
+remote:          Downloading click-6.7-py2.py3-none-any.whl (71kB)
+remote:        Collecting Flask==0.12.2 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 5))
+remote:          Downloading Flask-0.12.2-py2.py3-none-any.whl (83kB)
+remote:        Collecting idna==2.6 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 6))
+remote:          Downloading idna-2.6-py2.py3-none-any.whl (56kB)
+remote:        Collecting itsdangerous==0.24 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 7))
+remote:          Downloading itsdangerous-0.24.tar.gz (46kB)
+remote:        Collecting Jinja2==2.9.6 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 8))
+remote:          Downloading Jinja2-2.9.6-py2.py3-none-any.whl (340kB)
+remote:        Collecting kdtree==0.15 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 9))
+remote:          Downloading kdtree-0.15-py2.py3-none-any.whl
+remote:        Collecting MarkupSafe==1.0 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 10))
+remote:          Downloading MarkupSafe-1.0.tar.gz
+remote:        Collecting numpy==1.13.1 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 11))
+remote:          Downloading numpy-1.13.1-cp36-cp36m-manylinux1_x86_64.whl (17.0MB)
+remote:        Collecting pandas==0.20.3 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 12))
+remote:          Downloading pandas-0.20.3-cp36-cp36m-manylinux1_x86_64.whl (24.5MB)
+remote:        Collecting python-dateutil==2.6.1 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 13))
+remote:          Downloading python_dateutil-2.6.1-py2.py3-none-any.whl (194kB)
+remote:        Collecting pytz==2017.2 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 14))
+remote:          Downloading pytz-2017.2-py2.py3-none-any.whl (484kB)
+remote:        Collecting requests==2.18.4 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 15))
+remote:          Downloading requests-2.18.4-py2.py3-none-any.whl (88kB)
+remote:        Collecting scikit-learn==0.19.1 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 16))
+remote:          Downloading scikit_learn-0.19.1-cp36-cp36m-manylinux1_x86_64.whl (12.4MB)
+remote:        Collecting scipy==1.0.0 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 17))
+remote:          Downloading scipy-1.0.0-cp36-cp36m-manylinux1_x86_64.whl (50.0MB)
+remote:        Collecting selenium==3.5.0 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 18))
+remote:          Downloading selenium-3.5.0-py2.py3-none-any.whl (921kB)
+remote:        Collecting six==1.11.0 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 19))
+remote:          Downloading six-1.11.0-py2.py3-none-any.whl
+remote:        Collecting sklearn==0.0 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 20))
+remote:          Downloading sklearn-0.0.tar.gz
+remote:        Collecting splinter==0.7.6 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 21))
+remote:          Downloading splinter-0.7.6.tar.gz
+remote:        Collecting SQLAlchemy==1.1.14 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 22))
+remote:          Downloading SQLAlchemy-1.1.14.tar.gz (5.2MB)
+remote:        Collecting urllib3==1.22 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 23))
+remote:          Downloading urllib3-1.22-py2.py3-none-any.whl (132kB)
+remote:        Collecting Werkzeug==0.12.2 (from -r /tmp/build_f6d14843e3dd9052c457ccf6cb737c01/requirements.txt (line 24))
+remote:          Downloading Werkzeug-0.12.2-py2.py3-none-any.whl (312kB)
+remote:        Installing collected packages: gunicorn, certifi, chardet, click,itsdangerous, MarkupSafe, Jinja2, Werkzeug, Flask, idna, kdtree, numpy, six, py                                                               thon-dateutil, pytz, pandas, urllib3, requests, scikit-learn, scipy, selenium, sklearn, splinter, SQLAlchemy
+remote:          Running setup.py install for itsdangerous: started
+remote:            Running setup.py install for itsdangerous: finished with status 'done'
+remote:          Running setup.py install for MarkupSafe: started
+remote:            Running setup.py install for MarkupSafe: finished with status 'done'
+remote:          Running setup.py install for sklearn: started
+remote:            Running setup.py install for sklearn: finished with status 'done'
+remote:          Running setup.py install for splinter: started
+remote:            Running setup.py install for splinter: finished with status 'done'
+remote:          Running setup.py install for SQLAlchemy: started
+remote:            Running setup.py install for SQLAlchemy: finished with status 'done'
+remote:        Successfully installed Flask-0.12.2 Jinja2-2.9.6 MarkupSafe-1.0 SQLAlchemy-1.1.14 Werkzeug-0.12.2 certifi-2017.7.27.1 chardet-3.0.4 click-6.7 gun                                                               icorn-19.7.1 idna-2.6 itsdangerous-0.24 kdtree-0.15 numpy-1.13.1 pandas-0.20.3 python-dateutil-2.6.1 pytz-2017.2 requests-2.18.4 scikit-learn-0.19.1 scipy-1.0.0                                                                selenium-3.5.0 six-1.11.0 sklearn-0.0 splinter-0.7.6 urllib3-1.22
+remote:
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 236M
+remote: -----> Launching...
+remote:        Released v4
+remote:        https://project-gw.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/project-gw.git
+ * [new branch]      master -> master
+
+Chrisg@Chrisg-PC MINGW64 ~/bootcampclasswork/Project-GW (master)
+
+
+# to view the live app
+# open in a browser to https://project-gw.herokuapp.com or 
+# open via the Heroku CLI: 
+
+$ heroku open
+
+
+C:\Users\Chrisg\BootCampClasswork\Project-GW>heroku login
+ !    Error parsing plugin
+ !    C:\Users\Chrisg\AppData\Local\heroku\client\node_modules\heroku-pg
+ !    Unexpected token ;
+ !    Error parsing plugin
+ !    C:\Users\Chrisg\AppData\Local\heroku\client\node_modules\heroku-pipelines
+ !    Error parsing
+ !    C:\Users\Chrisg\AppData\Local\heroku\client\node_modules\heroku-pipelines\
+package.json:
+ !    Unexpected token m in JSON at position 1
+Enter your Heroku credentials:
+Email:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
