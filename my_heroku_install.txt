@@ -342,10 +342,10 @@ Email:
 
 
 
+Test URLs: 
+https://project-gw.herokuapp.com/api/v1.0/stations
 
-
-
-
+https://project-gw.herokuapp.com/api/v1.0/precipitation
 
 
 
