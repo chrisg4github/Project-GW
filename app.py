@@ -7,4 +7,4 @@ def render_static(landing_page):
     return render_template('./working/html/%s.html' % landing_page)
  
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
