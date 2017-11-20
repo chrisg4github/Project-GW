@@ -1,6 +1,4 @@
-STOP HERE: We'll regroup and discuss before you move on.
-
-effect size - is a simple way of quantifying the difference between two groups that has many advantages over the use of tests of statistical significance alone. Effect size emphasises the size of the difference rather than confounding this with sample size. (most important)
+effect size - is a simple way of quantifying the difference between two groups that has many advantages over the use of tests of statistical significance alone. Effect size emphasizes the size of the difference rather than confounding this with sample size. (most important)
 
 confidence interval - a range of values so defined that there is a specified probability that the value of a parameter lies within it. (next in importance)
 
@@ -20,30 +18,22 @@ And the Standard Deviation is just the square root of Variance, so: Standard Dev
 
 σ = √21,704 = 147.32... = 147 (to the nearest mm)
 
-
 Overlap (or misclassification rate) and "probability of superiority" have two good properties:
 
-    As probabilities, they don't depend on units of measure, so they are comparable between studies.
+1. As probabilities, they don't depend on units of measure, so they are comparable between studies.
+2. They are expressed in operational terms, so a reader has a sense of what practical effect the difference makes.
 
-    They are expressed in operational terms, so a reader has a sense of what practical effect the difference makes.
 
 Cohen's effect size
 
-There is one other common way to express the difference between distributions. Cohen's dd is the difference in means, standardized by dividing by the standard deviation. Here's the math notation:
+There is one other common way to express the difference between distributions. Cohen's ***d*** is the difference in means, standardized by dividing by the standard deviation. Here's the math notation:
 
-d=x¯1−x¯2sd=x¯1−x¯2s
+![cohens_effect_size_math_notation](C:\Users\Chrisg\BootCampClasswork\Project-GW\cohens_effect_size_math_notation.png)
 
-where ss is the pooled standard deviation:
+Cohen's ***d*** has a few nice properties:
 
-s=(n1−1)s21+(n2−1)s22n1+n2−2⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯√
+1. Because mean and standard deviation have the same units, their ratio is dimensionless, so we can compare ***d*** across different studies.
+2. In fields that commonly use d, people are calibrated to know what values should be considered big, surprising, or important.
+3. Given ***d*** (and the assumption that the distributions are normal), you can compute overlap, superiority, and related statistics.
 
-
-Cohen's dd has a few nice properties:
-
-    Because mean and standard deviation have the same units, their ratio is dimensionless, so we can compare dd across different studies.
-
-    In fields that commonly use dd, people are calibrated to know what values should be considered big, surprising, or important.
-
-    Given dd (and the assumption that the distributions are normal), you can compute overlap, superiority, and related statistics.
-
-In summary, the best way to report effect size depends on the audience and your goals. There is often a tradeoff between summary statistics that have good technical properties and statistics that are meaningful to a general audience.
+In summary, the best way to report effect size depends on the audience and your goals. There is often a trade off between summary statistics that have good technical properties and statistics that are meaningful to a general audience.
