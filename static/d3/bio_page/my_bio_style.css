@@ -3,7 +3,7 @@
 body{
   font: normal 14px Georgia, Times New Roman, Times, serif;
   color: #333333;
-  background-color: #FFFAFF;  /*#f2ffe6 #C1E1A6 #efeee7 #e6fffa #e6fff2*/
+  background-color: #FFFAFF;   
   }
 
 .navbar-default{
@@ -18,18 +18,18 @@ body{
   font-size: 24px;
   font-weight: bold;
   color: #FFF;
-  background-color: #ff80ff;  /*#47d2b8*/
+  background-color: #47d2b8;  
 }
 
 
 header{
-  background-color: #e6e6e6; /*#e6e6e6 #333333 #ffffff*/
+  background-color: #e6e6e6; 
   margin-top: 0;
 }
 
 h1{
   text-align: center;
-  color: #333333;  /*#ccffe5 #fafafa*/
+  color: #333333;  
   font-size: 28px;
   margin-top: 0;
   margin-left: 0;
@@ -40,7 +40,7 @@ h3{
   text-align: center;
   font-weight: bold;
   font-size: 16px;
-  color : #999999; /* #FFD9FF #00cc7a*/ 
+  color : #999999; 
   margin-top: 2%;
   margin-left: 0%;
   margin-bottom: 0%;*/
@@ -93,7 +93,7 @@ h3{
 
 #favs{
   border: 2px solid;
-  border-color: #d9d9d9;  /*#efeee7 #e6255a #00cc7a #00ff7b #00cc7a*/
+  border-color: #d9d9d9; 
   list-style-position:inside;
   width: 200px;
   height:60px;
