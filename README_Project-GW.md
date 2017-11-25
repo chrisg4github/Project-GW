@@ -6,7 +6,7 @@ What is the project about?  What historical or background information do we need
 
 ## The Story...about the Story
 
-### Environment - 
+### Environment 
 
 Sign up for Heroku account at https://signup.heroku.com/dc
 
@@ -48,55 +48,60 @@ $ git push heroku master
 
       Raw Data: BerkeleyEarth data page <http://berkeleyearth.org/data/>
 
-   - co2 Data Set Information
+   - co2 Data Set:
 
-   - Information by AF
+      - Information to be supplied by AF
 
-   - ​
-
-
-- **Data Cleansing**
-
-   - Excel
-   - Pandas
-
-- **Data Learning**
-
-   - Read data file into data frame and inspect it.
-
-     df = pd.read_csv('data.csv')
-
-     df.head() 
-
-     df.describe()
+      ​
 
 
-   - Create a scatter matrix using df.corr()
 
+**Data Cleansing**
 
-   - Create some plots
+- Excel was was used to sort, filter, count, and view the data sets.  Excel allows you to group segments of the data for comparisons, and it is easy to sum, convert, manipulate the data prior to creating csv files.
+- Pandas was also used to inspect and clean the data, drop NaN values, convert data types, rename columns, do preliminary charting like line, scatter, box, or histograms, correlation matrices, and merging data sets.
+
+**Data Learning**
+
+- Read data file into data frame, parse dates, read in as strings with dtype=object and convert to proper data types, and inspect it.
+
+  df = pd.read_csv(myData, dtype=object)
+
+  df.info()
+
+  df.head(10) 
+
+  df.describe()
+
+   - Create a scatter matrix using df.corr() to test correlation.
+
+   - Create some plots to learn 
+
      - df['col1'].plot(kind='box')
      - df['col1'].plot(kind='hist')
      - df['col1'].plot(kind='line')
 
-   - Create a list of hypothesis/questions to answer about the data.
+- More information on Lag plots, Correlation, and Visualization.
+  -  [lag_plot explanation](http://www.itl.nist.gov/div898/handbook/eda/section3/lagplot.htm)
+  - [Visualization Examples](https://pandas.pydata.org/pandas-docs/stable/visualization.html)
+  - [Introduction to Correlation](https://www.datascience.com/blog/introduction-to-correlation-learn-data-science-tutorials)
 
-     [lag_plot explanation](http://www.itl.nist.gov/div898/handbook/eda/section3/lagplot.htm)
 
-     [Visualization Examplesl](https://pandas.pydata.org/pandas-docs/stable/visualization.html)
+- Create a list of hypothesis/questions to answer about the data.
+  - Climate change is real.
+  - Temperature and co2 are components of Climate Change and as co2 increases the temperature of the earth increases.
+- Presentation of the data to tell a story.
+  - Create an application on Heroku to display charts, links to other information, videos, D3.
 
-- Presentation
 
-   - Create an application on Heroku to display charts, links to other information, videos, D3.
 
-- Tools Used:
+## Tools Used:
 
-   - Excel, Pandas
-   - Heroku - Creating applications:
-      1. Hawaii API
-      2. Weather Visualization
-      3. D3 Charting
-   - PostgreSQL or SQLite
-   - HTML, CSS, JavaScript, Bootstrap
-   - Matplotlib, D3
-
+- Excel, Pandas
+- Heroku - Creating applications:
+   1. Hawaii API
+   2. Weather Visualization
+   3. D3 Charting
+- PostgreSQL
+- HTML, CSS, JavaScript, Bootstrap
+- Matplotlib, D3
