@@ -38,9 +38,9 @@ $ git push heroku master
 
 ## Data
 
-- **Data Search**
+**Data Search**
 
-   - Data.World: <https://data.world/data-society/global-climate-change-data>
+- Data.World: <https://data.world/data-society/global-climate-change-data>
 
    - Original Data Sources:
 
@@ -48,12 +48,11 @@ $ git push heroku master
 
       Raw Data: BerkeleyEarth data page <http://berkeleyearth.org/data/>
 
-   - co2 Data Set:
+- co2 Data Set:
 
-      - Information to be supplied by AF
+   - Information to be supplied by AF
 
-      ​
-
+   ​
 
 
 **Data Cleansing**
@@ -83,8 +82,8 @@ $ git push heroku master
 
 - More information on Lag plots, Correlation, and Visualization.
   -  [lag_plot explanation](http://www.itl.nist.gov/div898/handbook/eda/section3/lagplot.htm)
-  - [Visualization Examples](https://pandas.pydata.org/pandas-docs/stable/visualization.html)
-  - [Introduction to Correlation](https://www.datascience.com/blog/introduction-to-correlation-learn-data-science-tutorials)
+  -  [Visualization Examples](https://pandas.pydata.org/pandas-docs/stable/visualization.html)
+  -  [Introduction to Correlation](https://www.datascience.com/blog/introduction-to-correlation-learn-data-science-tutorials)
 
 
 - Create a list of hypothesis/questions to answer about the data.
@@ -99,9 +98,9 @@ $ git push heroku master
 
 - Excel, Pandas
 - Heroku - Creating applications:
-   1. Hawaii API
-   2. Weather Visualization
-   3. D3 Charting
+  - Hawaii API
+  - Weather Visualization
+  - D3 Charting
 - PostgreSQL
 - HTML, CSS, JavaScript, Bootstrap
 - Matplotlib, D3
