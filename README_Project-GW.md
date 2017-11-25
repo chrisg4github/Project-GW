@@ -4,7 +4,7 @@ What is the project about?  What historical or background information do we need
 
 
 
-## The Story behind the Data Science
+## The Story...about the Story
 
 ### Environment - 
 
@@ -36,9 +36,11 @@ $ git push heroku master
 
 
 
-## Data Search
+## Data
 
-- Data.World: <https://data.world/data-society/global-climate-change-data>
+- **Data Search**
+
+   - Data.World: <https://data.world/data-society/global-climate-change-data>
 
    - Original Data Sources:
 
@@ -46,32 +48,55 @@ $ git push heroku master
 
       Raw Data: BerkeleyEarth data page <http://berkeleyearth.org/data/>
 
-- co2 Data Set Information
+   - co2 Data Set Information
 
-- Data Cleansing
+   - Information by AF
+
+   - ​
+
+
+- **Data Cleansing**
 
    - Excel
    - Pandas
 
-- Data Learning
+- **Data Learning**
 
-- Creating applications:
+   - Read data file into data frame and inspect it.
 
-   1. Hawaii API
-   2. Weather Visualization
-   3. D3 Charting
+     df = pd.read_csv('data.csv')
 
-- Tools
+     df.head() 
 
-- Heroku
+     df.describe()
 
-- PostgreSQL or SQLite
 
-- HTML, CSS, JavaScript, Bootstrap
+   - Create a scatter matrix using df.corr()
 
-- Matplotlib, D3
+
+   - Create some plots
+     - df['col1'].plot(kind='box')
+     - df['col1'].plot(kind='hist')
+     - df['col1'].plot(kind='line')
+
+   - Create a list of hypothesis/questions to answer about the data.
+
+     [lag_plot explanation](http://www.itl.nist.gov/div898/handbook/eda/section3/lagplot.htm)
+
+     [Visualization Examplesl](https://pandas.pydata.org/pandas-docs/stable/visualization.html)
 
 - Presentation
-   1. README.md
-   2. PowerPoint?
+
+   - Create an application on Heroku to display charts, links to other information, videos, D3.
+
+- Tools Used:
+
+   - Excel, Pandas
+   - Heroku - Creating applications:
+      1. Hawaii API
+      2. Weather Visualization
+      3. D3 Charting
+   - PostgreSQL or SQLite
+   - HTML, CSS, JavaScript, Bootstrap
+   - Matplotlib, D3
 
