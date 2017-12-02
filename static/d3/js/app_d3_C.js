@@ -158,18 +158,21 @@ d3.csv("gwData1.csv", function(err, gwData1) {
     
     // Add state abbr to circles
   chart.selectAll("text")
-    .data(scatterData3)
+    .data(gwData1)
     .enter()
     .append("text")
-    .attr("x", function(data, index) {
-          return xLinearScale(data[currentAxisLabelX]);
-    })
-    .attr("y", function(data, index) {
-      return yLinearScale(data[currentAxisLabelY] + -0.6);
-    })
-    .attr("text-anchor", "middle")
-    .attr("class", function(data, index){return "circleText sel-" + index})     
-    .text(function(data, index){return data.Locationabbr});
+    .attr("transform", "translate(" + (margin.left) + " ," + (height / 2) + ")")
+    .attr("text-anchor", "start")
+    .attr("class", "Text-Item")     
+    .text(function(data, index){return data.Sentence})
+    .transition()
+    .duration(5000);
+
+  chart.selectAll(".Text-Item")
+    .transition()
+    .duration(5000)
+    .style("opacity", 0);
+    .remove();     
 
   // x-axis label code
   // 
