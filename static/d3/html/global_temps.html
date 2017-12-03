@@ -3,20 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Compare Temperature by Country</title>
+  <title>Global Temperatures</title>
+  
+  <!-- bootstrapcdn stylesheet -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
   
   <!--reset stylesheet -->
   <link type="text/css" rel="stylesheet" href="../css/reset.css">
 
-  <!-- bootstrapcdn stylesheet -->
-  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-  
   <!-- landing page stylesheet  -->
-  <link type="text/css" rel="stylesheet" href="../css/compare_global_temps_style.css">
+  <link type="text/css" rel="stylesheet" href="../css/global_temps_style.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -36,7 +36,7 @@
             <ul class="dropdown-menu">
               <li><a href="http://www.skepticalscience.com/global-warming-scientific-consensus.htm" target="_blank">Climate Change Consensus</a></li>
               <li><a href="https://www.skepticalscience.com/argument.php" target="_blank">Global Warming & Climate Change Myths</a></li>
-              <li><a href="https://link.springer.com/article/10.1007/s00704-015-1597-5" target="_blank">A Study of Climate Change Denial Studies</a></li>
+              <li><a href="https://link.springer.com/article/10.1007/s00704-015-1597-5" target="_blank">Study of Climate Change Denial Studies</a></li>
             </ul>
           </li>
           <li class="dropdown">
@@ -53,65 +53,87 @@
           <li><a href="about_gw.html" target="_blank">About</a></li>
         </ul>
       </div>
-      <!-- navbar-collapse -->
+    <!-- navbar-collapse -->
     </div>
     <!-- container-fluid -->
   </nav>
-  
+
   <!-- Our rows function in containers (grid created). -->
   <div class="container-fluid">
-    <!-- Our columns function in rows. -->
-    <div class="rows">
-      <div class="col-md-12">
-        <h1>Compare Temperatures by Country</h1>
-        <hr>
-      </div>
-    </div>
-
-    <div class="rows">
+    <!-- 1st row of columns -->
+    <div class="row">
       <!-- Columns have 12 areas of width to work with. -->
-      <!-- One half of screen (6/12) -->
-      <div class="col-md-6">
-        <section id="img-1">
-          <h2 align="center">Spain Yearly Avg Temp (F)</h2>
+      <!-- (7/12)  of screen -->
+      <div class="col-sm-7" id="col-7">
+        <h1>Global Yearly Avg Temperatures(F)</h1>
+        <hr>
+        <section id="temp_main">
           <figure>
-            <!--<a href="temperature_page.html">-->
-            <img class="img-responsive" src="../images/1850-2012_spain_temp_chart.png" width="500" height="300" alt="Yearly Avg Temp (F) by Country"></a>
+            <img class="img-responsive" src="../images/global_1850-2015_yearly_tempf.png" width="800" height="800" alt="Global Yearly Avg Temps (F)">
           </figure>
         </section>
-      </div>
-        <!-- One half of screen (6/12) -->
-      <div class="col-md-6">
-        <section id="img-2">
-          <h2 align="center">Canada Yearly Avg Temp (F)</h2>
-          <figure>
-            <!--<a href="cloudiness_page.html">-->
-            <img class="img-responsive" src="../images/1850-2012_canada_temp_chart.png" width="500" height="300" alt="Canada Yearly Avg Temp (F)"></a>
-          </figure>
-        </section>
-      </div>
-    </div>
 
-    <div class="rows">
-      <div class="col-md-6">
-        <section id="img-3">
-          <h2 align="center">Poland Yearly Avg Temp (F)</h2>
-          <figure>
-            <!--<a href="humidity_page.html">-->
-            <img class="img-responsive" src="../images/1850-2012_poland_temp_chart.png" width="500" height="300" alt="Poland Yearly Avg Temp (F)"></a>
-          </figure>
-        </section>
-       <!-- div - row 1 col-md-6 end --> 
+        <p id="temp_p"> 
+          Add analysis here.  
+        </p>
+      <!-- div col 7 end -->  
       </div>
-      <div class="col-md-6">
-        <section id="img-4">
-          <h2 align="center">France Yearly Avg Temp (F)</h2>
-          <figure>
-            <!--<a href="wind_mph_page.html">-->
-            <img class="img-responsive" src="../images/1850-2012_france_temp_chart.png" width="500" height="300" alt="France Yearly Avg Temp (F)"></a>
-          </figure>
-        </section>
-      <!-- div - row 2 col-md-6 end -->  
+    
+      <!-- Visualizations -->
+      <div class="col-sm-4" id="viz-all">
+        <h2 align="center">Global Temperatures</h2>
+        <hr>
+        <!-- nested row 12 columns " -->
+        <div class="row">       
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <h3 align='center'>Land Min Avg</h3>
+                <a href="compare_global_temps.html">
+                <img class="img-responsive" src="../images/global_1850-2015_yearly_land_min_avg_tempf.png" alt="Global Yearly Land Min Average Temperature (F)"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <h3 align='center'>Land Avg</h3>
+                <a href="compare_global_temps.html">
+                <img class="img-responsive" src="../images/global_1850-2015_yearly_land_avg_tempf.png" alt="Global Yearly Land Avg Temp (F)"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+        <!-- nested row 12 columns -->
+        </div>    
+        
+        <!-- nested row 12 columns -->
+        <div class="row">
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <h3 align='center'>Land Max Avg</h3>
+                <a href="compare_global_temps.html">
+                <img class="img-responsive" src="../images/global_1850-2015_yearly_land_max_avg_tempf.png" alt="Global Yearly Land Max Average Temperature (F)"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+
+          <div class="col-sm-6">     
+            <section>
+              <figure>
+                <h3 align='center'>Land Ocean Avg</h3>
+                <a href="compare_global_temps.html">
+                <img class="img-responsive" src="../images/global_1850-2015_yearly_land_ocean_avg_tempf.png" alt="Global Yearly Land Ocean Average Temperature (F)"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+        <!-- nested row 12 columns -->
+        </div>  
+      <!-- div - col 4 end -->  
       </div>
     <!-- div - row end -->
     </div>
@@ -122,7 +144,7 @@
   <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
   <!-- bootstrap javascript file -->
   <script type="text/javascript" src="../js/bootstrap.js"></script>
-
+  
 </body>
 
 </html>	

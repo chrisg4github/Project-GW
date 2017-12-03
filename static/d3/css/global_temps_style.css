@@ -1,10 +1,11 @@
-/* landing_style.css */
+/* temperature_style.css */
 
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 
 body{
   background-color: #fbf9f9;
@@ -26,6 +27,7 @@ body{
 }
 
 
+
 h1{
   font-size: 36px;
   font-weight: bold;
@@ -39,7 +41,7 @@ h2{
   color: #47d2b8;
   margin-top: 10%;
   padding-top: 0%;
-  border-bottom: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
 }
 
 h3{
@@ -67,14 +69,4 @@ h3{
   padding: 10px 10px 10px 10px;
   background-color: white;
 }
-
-#sumry-img{
-  float: left;
-  margin-left: 0;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  padding: 0 0 0 0;
-}
-
-
 
