@@ -50,3 +50,10 @@ Lag plots allow you to check for:
 4. **Seasonality** (periodic fluctuations in time series data that happens at regular periods).  Data can be checked for seasonality by plotting observations for a greater number of periods (lags). Data with seasonality will repeat itself periodically in a sine or cosine-like wave.
 
 
+How many data scientists does it take to change a light bulb? Answer: 101. A hundred to build a scalable middleware infrastructure for managing multiple applications, fitting types, light bulb technologies and different wattages, and to build a schema or ontology to identify the relationships between these. One to change the light bulb.
+
+Q: How many data analysts does it take to change a light bulb? A: It depends what approach they use…
+https://orcinternational.com.au/market-research/q-how-many-data-analysts-does-it-take-to-change-a-light-bulb-a-it-depends-what-approach-they-use/
+
+“Climate change is like my head: it’s not visible in every instance, but I’m pretty darn sure it’s there.” 
+― Narcissismus Decimus Maximus
