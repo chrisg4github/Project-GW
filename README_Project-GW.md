@@ -110,8 +110,14 @@ $ git push heroku master
   - 2nd test app - Weather Visualization.
   - 3rd test app - D3 Charting.
   - 4th production app - Global Warming Visualization
-- Local and Heroku PostgreSQL.
-- HTML, CSS, JavaScript, Bootstrap, Strapdown.
+  - README_heroku.md (general heroku app create instructions)
+  - HerokuInstallNotes.docx (Windows specific information)
+- Local and Heroku PostgreSQL (create database objects in all lower case).
+  - gw_sequences.ddl
+  - gw_tables.ddl
+  - gw_table_counts.sql
+  - gw_export_move_cmds.txt
+- HTML, CSS, JavaScript, Bootstrap, Strapdown (for readme.md files).
 - Matplotlib, Seaborn, D3.
 
 ## Additional Sources:
@@ -120,3 +126,4 @@ $ git push heroku master
   JUSTIN GILLIS  Illustrations by JON HAN,
   https://www.nytimes.com/interactive/2017/climate/what-is-climate-change.html
 - "Google search engine" which was used numerous times to find so many answers and avenues of research and insight.
+

@@ -1,4 +1,4 @@
-year,country,yearly_avg_temp_f,yearly_avg_temp_c,yearly_temp_uncertain
+year,country,yr_avg_temp_f,yr_avg_temp_c,yr_avg_temp_uncertainty
 1744,Albania,57.311375,14.061874999999999,2.2430000000000003
 1744,Andorra,53.89295,12.162750000000003,2.1766249999999996
 1744,Austria,46.012550000000005,7.784750000000002,2.08025

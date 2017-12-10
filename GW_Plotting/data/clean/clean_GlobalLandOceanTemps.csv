@@ -1,4 +1,4 @@
-date,land_avg_temp_f,land_avg_temp_c,land_avg_temp_uncertain,land_max_temp_f,land_max_temp_c,land_max_temp_uncertain,land_min_temp_f,land_min_temp_c,land_min_temp_uncertain,land_ocean_avg_temp_f,land_ocean_avg_temp_c,land_ocean_avg_temp_uncertain
+g_m_date,g_land_avg_tempf,g_land_avg_tempc,g_land_avg_temp_uncert,g_land_max_tempf,g_land_max_tempc,g_land_max_temp_uncert,g_land_min_tempf,g_land_min_tempc,g_land_min_temp_uncert,g_land_ocean_avg_tempf,g_land_ocean_avg_tempc,g_land_ocean_avg_temp_uncert
 1850-01-01,33.3482,0.7490000000000001,1.105,46.8356,8.241999999999999,1.7380000000000002,26.2292,-3.2060000000000004,2.822,55.0994,12.832999999999998,0.3670000000000001
 1850-02-01,37.5278,3.071,1.275,49.946,9.97,3.0069999999999997,27.876199999999997,-2.2910000000000004,1.6230000000000002,56.4584,13.588,0.414
 1850-03-01,40.9172,4.954,0.955,50.6246,10.347,2.401,28.570999999999998,-1.905,1.41,57.2774,14.043,0.341
