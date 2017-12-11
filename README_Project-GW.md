@@ -116,7 +116,7 @@ $ git push heroku master
   - gw_sequences.ddl
   - gw_tables.ddl
   - gw_table_counts.sql
-  - gw_export_move_cmds.txt
+  - gw_export_import_cmds.txt
 - HTML, CSS, JavaScript, Bootstrap, Strapdown (for readme.md files).
 - Matplotlib, Seaborn, D3.
 
