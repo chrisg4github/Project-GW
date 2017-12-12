@@ -79,6 +79,9 @@
             <img class="img-responsive" src="../images/usa_lag-plot_temp.png" width="500" height="300" alt="USA Temp Lag Plot"></a>
           </figure>
         </section>
+        <p class='p_caption'>
+        This USA 1878 - 2012 temperature lag plot shows the data has structure which is excellent because it is temperature and time related so it shouldn't be randomly distributed on plot.
+        </p>
       </div>
         <!-- One half of screen (6/12) -->
       <div class="col-md-6">
@@ -89,6 +92,9 @@
             <img class="img-responsive" src="../images/france_lag-plot_temp.png" width="500" height="300" alt="France Temp Lag Plot"></a>
           </figure>
         </section>
+        <p class='p_caption'>
+        This France 1850 - 2012 temperature lag plot is very similar to the USA one.  It has a few more years of data points so it has a little bit better structure but again the important thing is that the data should be relatively structured.      
+        </p>
       </div>
     </div>
 
@@ -101,6 +107,9 @@
             <img class="img-responsive" src="../images/usa_histogram_co2.png" width="500" height="300" alt="USA CO2 Histogram"></a>
           </figure>
         </section>
+        <p class='p_caption'>
+        This USA 1878 - 2012 histogram has frequency on the y axis and CO2 metric tons on the x axis.  The plot has more lower CO2 amounts because the amount of CO2 output increases with the increase use of fossil fuels.
+        </p>
        <!-- div - row 1 col-md-6 end --> 
       </div>
       <div class="col-md-6">
@@ -111,11 +120,14 @@
             <img class="img-responsive" src="../images/france_histogram_co2.png" width="500" height="300" alt="France CO2 Histogram"></a>
           </figure>
         </section>
+        <p class='p_caption'>
+        This France 1850 - 2012 histogram is similar to the USA one, and again no surprises it follows the same pattern of distribution and frequency as the USA chart with explainable differences due to size of population.
+        </p>
       <!-- div - row 2 col-md-6 end -->  
       </div>
 
     <div class="rows">
-      <div class="col-md-6">
+      <div class="col-md-6" id="left-3">
         <section id="img-3">
           <h2 align="center">USA Correlation</h2>
           <figure>
@@ -123,6 +135,9 @@
             <img class="img-responsive" src="../images/usa_co2_temp_correlation.png" width="500" height="300" alt="USA Correlation"></a>
           </figure>
         </section>
+        <p class='p_caption'>
+        This image is from a Jupyter notebook showing the corr() function with inputs of USA temperature and CO2 data.  The numbers to look at are where the columns and rows meet for the data points you want to compare.  The data points are temperature (F) and CO2, and we have a value of 0.623459.  Any correlation value greater than 0.5 or -0.5 is a good correlation number.
+        </p>
        <!-- div - row 1 col-md-6 end --> 
       </div>
       <div class="col-md-6">
@@ -133,6 +148,9 @@
             <img class="img-responsive" src="../images/france_co2_temp_correlation.png" width="500" height="300" alt="France Correlation"></a>
           </figure>
         </section>
+        <p class='p_caption'>
+        This image is from a Jupyter notebook showing the corr() function with inputs of France temperature and CO2 data.  The data points are temperature (F) and CO2, and we have a value of 0.532010.  This shows a positive correlation value greater than 0.5, so the two sets of numbers correlate in a positive direction as we hope and expect.
+        </p>
       <!-- div - row 2 col-md-6 end -->  
       </div>      
     <!-- div - row end -->

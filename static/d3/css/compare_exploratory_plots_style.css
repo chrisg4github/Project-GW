@@ -43,6 +43,10 @@ h2{
   margin-top: 5%;
 }
 
+.p_caption{
+  padding-left: 40px;
+  padding-right: 15px;
+}
 
 .col-md-12{
   background-color: white;
@@ -54,5 +58,11 @@ h2{
 	background-color: white;
 	margin: 0;
   padding: 0;
+}
+
+#left-3{
+  float: left;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
