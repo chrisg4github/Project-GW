@@ -64,8 +64,6 @@ function textDisplay(){
       data.yVal = +data.y;
       data.xVal = +data.x;
       data.Sentence = data.sentence;
-      // console.log("yVal ",data.yVal);
-      // console.log("xVal ",data.xVal);
     });
   
 
@@ -80,13 +78,13 @@ function textDisplay(){
     .text(function(data, index){return data.Sentence})
     .transition()
     .duration(1800)
-    .style("opacity", 0)
     .style("font-size","28px")
     .style('fill', '#47d2b8')
     .style("font-weight",'bold')
-    .transition()
-    .duration(4000)
-    .style("opacity", 1);
+    .style("opacity", 0);
+    // .transition()
+    // .duration(4000)
+    // .style("opacity", 1);
   
   repeat();
 

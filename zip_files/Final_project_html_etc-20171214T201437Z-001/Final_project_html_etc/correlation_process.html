@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Correlating Data</title>
+  
+  <!-- bootstrapcdn stylesheet -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+  
+  <!--reset stylesheet -->
+  <link type="text/css" rel="stylesheet" href="../css/reset.css">
+
+  <!-- landing page stylesheet  -->
+  <link type="text/css" rel="stylesheet" href="../css/correlation_process_style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="lat-link" href="/">Global Warming</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Climate Controversy<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://www.skepticalscience.com/global-warming-scientific-consensus.htm" target="_blank">Climate Change Consensus</a></li>
+              <li><a href="https://www.skepticalscience.com/argument.php" target="_blank">Global Warming & Climate Change Myths</a></li>
+              <li><a href="https://link.springer.com/article/10.1007/s00704-015-1597-5" target="_blank">Study of Climate Change Denial Studies</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GW Charts<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="gw_story.html">Climate Change ~ Global Warming</a></li>
+              <li><a href="explore_process.html">Exploring Data</a></li>
+              <li><a href="correlation_process.html">Correlating Data</a></li>
+              <li><a href="global_temps.html">Global Temperatures</a></li>
+              <li><a href="temps_by_country.html">Temperatures by Country</a></li>
+              <li><a href="co2_temps.html">CO2</a></li>
+            </ul>
+          </li>
+          <li><a href="http://smartplayer.captionsync.com/play.php?vid=1509669950apetrash_741a3839075d" target="_blank">Climate Change 101 with Bill Nye</a></li>
+          <li><a href="about_gw.html" target="_blank">About</a></li>
+        </ul>
+      </div>
+    <!-- navbar-collapse -->
+    </div>
+    <!-- container-fluid -->
+  </nav>
+
+  <!-- Our rows function in containers (grid created). -->
+  <div class="container-fluid">
+    <!-- 1st row of columns -->
+    <div class="row">
+      <!-- Columns have 12 areas of width to work with. -->
+      <!-- (7/12)  of screen -->
+      <div class="col-sm-7" id="col-7">
+        <h1>Correlating Data</h1>
+        <hr>
+        <section id="temp_main">
+          <figure>
+            <img class="img-responsive" src="../images/hist_co2_yrsum.png" width="800" height="800" alt="Global Yearly CO2">
+          </figure>
+        </section>
+
+        <p id="temp_p"> 
+            
+          The Pearson correlation evaluates the linear relationship between the two continuous variables for temperature and CO2.  The range of a Pearson plot is -1 to +1.  Our Pearson shows a medium strong correlation coefficient of .56588 when date range starts at 1744 for both data sources.
+        <br>
+        <br>  
+          A Lag Plot checks whether a data set is random(non linear) or not.   
+          Our lag plots for each data source by year(linear) show a tight positive diagonal correlation.   
+            
+        </p>
+        <p>  
+          Autocorrelation is another plot to validate data source. 
+          Both data sources present the same arc and curve pattern around the central axis.  This is a strong data correlation indicator.
+          <br>
+         <br>
+        Clicking on any smaller plot on this page will bring up another page to compare a few of the correlation plots we used in this part of the project.  In this visualization, we are showing only a small fraction of the charts we completed, but the rest of the charts are available in our Jupyter Notebooks as noted in the "About" page.
+        </p>
+      <!-- div col 7 end -->  
+      </div>
+    
+      <!-- Visualizations -->
+      <div class="col-sm-4" id="viz-all">
+        <h2 align="center">Correlation Process</h2>
+        <hr>
+        <!-- nested row 12 columns " -->
+        <div class="row">       
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <h3 align='center'>CO2 Yearly data Lag </h3>
+                <a href="compare_correlative_plots.html">
+                <img class="img-responsive" src="../images/lag_co2_sum.png" alt="Global CO2 Lag Plot"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <h3 align='center'>Temp(F) Yearly data Lag</h3>
+                <a href="compare_correlative_plots.html">
+                <img class="img-responsive" src="../images/lag_tmean_df.png" alt="Global Temp Lag Plot"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+        <!-- nested row 12 columns -->
+        </div>    
+
+              
+          <!-- nested row 12 columns>>>-->
+        <div class="row">
+          <div class="col-sm-6">
+            <section>
+              <figure>
+                <h3 align='center'>CO2 AutoCorrelation</h3>
+                <a href="compare_correlative_plots.html">
+                <img class="img-responsive" src="../images/autcor3.png" alt="CO2 Correlation"></a>
+              </figure>
+            </section>
+          <!-- nested 6 columns -->  
+          </div>
+
+          <div class="col-sm-6">     
+            <section>
+              <figure>
+                <h3 align='center'>Temp AutoCorrelation</h3>
+                <a href="compare_correlative_plots.html">
+                <img class="img-responsive" src="../images/autcor1.png" alt="Temp Correlation"></a>
+              </figure>
+            </section>                          
+        <!-- div - col 4 end -->  
+      </div>
+    <!-- div - row end -->
+    </div>
+  <!-- div container end -->
+  </div>
+       
+     
+
+  <!-- jquery file  -->
+  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+  <!-- bootstrap javascript file -->
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  
+</body>
+
+</html>	
