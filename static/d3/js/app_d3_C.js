@@ -305,7 +305,7 @@ function textDisplay(){
       .duration(1800)
       .style("opacity", 0)
       .style("font-size","28px")
-      .style('fill', 'darkviolet')
+      .style('fill', 'black')
       .style("font-weight",'bold')
       .transition()
       .duration(4000)
